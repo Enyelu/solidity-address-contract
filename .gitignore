@@ -1,0 +1,14 @@
+node_modules/       # Node.js dependencies if using tools like Hardhat or Truffle
+artifacts/           # Build artifacts from Solidity compilation
+build/               # Compiled contracts and build folder (Hardhat, Truffle)
+.cache/              # Cache files (from Hardhat, Truffle)
+*.log                # Log files
+*.env                # Environment variable files (for private keys)
+.DS_Store            # macOS system files
+Thumbs.db            # Windows system files
+states.json          #states.json files
+
+.vscode/                         # VS Code files
+contracts/artifacts/             # Solidity artifacts
+contracts/artifacts/build-info/  # Build info
+
