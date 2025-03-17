@@ -11,4 +11,3 @@ states.json          #states.json files
 .vscode/                         # VS Code files
 contracts/artifacts/             # Solidity artifacts
 contracts/artifacts/build-info/  # Build info
-
