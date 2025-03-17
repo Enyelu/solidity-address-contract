@@ -29,8 +29,6 @@ This is the primary function of the contract, which returns a struct (`ResponseM
   - Transaction Origin (the sender's address of the transaction)
   - Transaction Signature (the function signature that was called)
   - Transaction Sender (the address that initiated the transaction)
-  - Gas Remaining (`gasleft()`)
-  - Transaction Value (Ether sent with the transaction)
 
 The function is restricted to the owner address, which is hardcoded for demonstration.
 
@@ -58,19 +56,19 @@ The function is restricted to the owner address, which is hardcoded for demonstr
    - The owner can call the `printInputs()` function to retrieve the block and transaction data.
    - The contract will return a `ResponseModel` struct containing the requested information.
 
-### Example of calling `printInputs()`
+### Example of calling `getTransactionInfo()`
 
 ```javascript
 const myContract = new web3.eth.Contract(abi, contractAddress);
 
 // Call the function as the owner
-const response = await myContract.methods.printInputs().call({ from: ownerAddress });
+const response = await contractAddress.methods.getTransactionInfo().call({ from: ownerAddress });
 console.log(response);
 ```
 
 ## Notes
 
-- **Gas Estimation:** Calling the `printInputs()` function will require gas, as it interacts with blockchain data and performs some calculations.
+- **Gas Estimation:** Calling the `getTransactionInfo()` function will require gas, as it interacts with blockchain data and performs some calculations.
 - **Owner Management:** Ensure you update the `owner address` in the contract before deploying to ensure only the designated account can access the functionality.
 
 ## License
