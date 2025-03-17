@@ -7,150 +7,74 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "Addr",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "arrayNumbers",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "blockNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "endTime",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "gasprice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "hey",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "maxNumber",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "minNumber",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "no",
-				"outputs": [
-					{
-						"internalType": "int8",
-						"name": "",
-						"type": "int8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "printInputs",
 				"outputs": [
 					{
-						"internalType": "address",
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "blockNumber",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockBasefee",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "blockHash",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockChainId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "blockCoinbase",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockDifficulty",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockGaslimit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockTimestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "originGasPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "origin",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes4",
+								"name": "signature",
+								"type": "bytes4"
+							},
+							{
+								"internalType": "address",
+								"name": "sender",
+								"type": "address"
+							}
+						],
+						"internalType": "struct MyFirstContract.ResponseModel",
 						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -158,12 +82,67 @@
 			},
 			{
 				"inputs": [],
-				"name": "startTime",
+				"name": "response",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "blockNumber",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockBasefee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "blockHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockChainId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "blockCoinbase",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockDifficulty",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockGaslimit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockTimestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "originGasPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "origin",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes4",
+						"name": "signature",
+						"type": "bytes4"
+					},
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -198,11 +177,11 @@
 	},
 	"sources": {
 		"contracts/2_AddressContract.sol": {
-			"keccak256": "0x33dcb71dcb334c0c630caa70afd7a124a3c7cbf956b1714a618c1a3981971858",
+			"keccak256": "0xc58967f5462f16e6a24c4165fd97ffe984e185c9c78e8af07c91b20c391769ba",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3ecd0c705cac53771bfaf259048ab3985e6416c373a4a427793e9b1335d8f9ed",
-				"dweb:/ipfs/QmT7awSK7CneysrLZnJW37NbmYNH9rLpEjDe3nZWnJanHt"
+				"bzz-raw://fa7bd58ec8b51745ef88a30df1f47fbc2494c5c7e3c343d5735ea06fbe461b00",
+				"dweb:/ipfs/QmUh5Lw54eBw7kz31uHhHzyLvgso6kvNbWZ4eJt8Z1R6qy"
 			]
 		}
 	},
