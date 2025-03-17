@@ -3,7 +3,7 @@
 pragma solidity ^0.8.13;
 
 
-contract MyFirstContract {
+contract AddressContract {
 
    ResponseModel public response;
 
@@ -26,10 +26,10 @@ contract MyFirstContract {
    }
 
    modifier onlyOwner{
-     require(msg.sender != 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2, "Caller is not owner");
+     require(msg.sender == 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, "Caller is not owner");
      _;
    }
-   function  printInputs  () onlyOwner public returns(ResponseModel memory){
+   function  getTransactionInfo  () onlyOwner public returns(ResponseModel memory){
 
         response.blockNumber = block.number;
         response.blockBasefee = block.basefee;

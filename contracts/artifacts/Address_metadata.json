@@ -1,0 +1,189 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "printInputs",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "blockNumber",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockBasefee",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "blockHash",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockChainId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "blockCoinbase",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockDifficulty",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockGaslimit",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "blockTimestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "originGasPrice",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "origin",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes4",
+								"name": "signature",
+								"type": "bytes4"
+							},
+							{
+								"internalType": "address",
+								"name": "sender",
+								"type": "address"
+							}
+						],
+						"internalType": "struct Address.ResponseModel",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "response",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "blockNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockBasefee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "blockHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockChainId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "blockCoinbase",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockDifficulty",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockGaslimit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockTimestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "originGasPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "origin",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes4",
+						"name": "signature",
+						"type": "bytes4"
+					},
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2_AddressContract.sol": "Address"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2_AddressContract.sol": {
+			"keccak256": "0xb5e377337988ecc6f37c87c4381aba2e4c2544c5881f44250e34c85ca95e5f7d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9662c51a7d842b8a779f844f2f46e9bf9f54310155d0e6412742c9241bb6f4be",
+				"dweb:/ipfs/QmSQ9ePTzjNLisDsLMsgmU7Wp6dTyMt6sGszink789Dowu"
+			]
+		}
+	},
+	"version": 1
+}
