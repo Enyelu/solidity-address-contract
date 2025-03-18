@@ -10,7 +10,7 @@ import "hardhat/console.sol";
  */
 contract Owner {
 
-    address private owner;
+    address internal owner;
 
     // event for EVM logging
     event OwnerSet(address indexed oldOwner, address indexed newOwner);
@@ -39,7 +39,7 @@ contract Owner {
      * @dev Change owner
      * @param newOwner address of new owner
      */
-    function changeOwner(address newOwner) public isOwner {
+    function changeOwner(address newOwner) internal isOwner {
         require(newOwner != address(0), "New owner should not be the zero address");
         emit OwnerSet(owner, newOwner);
         owner = newOwner;
@@ -49,7 +49,7 @@ contract Owner {
      * @dev Return owner address 
      * @return address of owner
      */
-    function getOwner() external view returns (address) {
+    function getOwner() internal view  returns (address) {
         return owner;
     }
 } 
