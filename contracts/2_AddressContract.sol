@@ -2,13 +2,16 @@
 
 pragma solidity ^0.8.13;
 
+// Import the 1_Owner contract
+import "./1_Owner.sol";
 
-contract AddressContract {
+contract AddressContract is Owner{
 
-   ResponseModel public response;
+   ResponseModel private response;
+   event PublishDataRead(address indexed sender, string message, ResponseModel data);
 
    struct ResponseModel {
-    
+
     uint  blockNumber ;
     uint  blockBasefee;
     bytes32  blockHash;
@@ -17,18 +20,17 @@ contract AddressContract {
     uint  blockDifficulty;
     uint  blockGaslimit;
     uint  blockTimestamp;
-
     uint  originGasPrice;
     address origin;
-
     bytes4 signature;
     address sender;
    }
 
    modifier onlyOwner{
-     require(msg.sender == 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4, "Caller is not owner");
+     require(msg.sender == owner, "Caller is not owner");
      _;
    }
+   
    function  getTransactionInfo  () onlyOwner public returns(ResponseModel memory){
 
         response.blockNumber = block.number;
@@ -46,7 +48,7 @@ contract AddressContract {
         response.signature = msg.sig;
         response.sender = msg.sender;
 
+        emit PublishDataRead(msg.sender, "Transaction info has just been read", response);
         return (response);
-
    }
 }

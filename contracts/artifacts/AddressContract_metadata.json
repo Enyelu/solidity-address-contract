@@ -6,6 +6,25 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerSet",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "getTransactionInfo",
 				"outputs": [
@@ -79,74 +98,6 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "response",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "blockNumber",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "blockBasefee",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bytes32",
-						"name": "blockHash",
-						"type": "bytes32"
-					},
-					{
-						"internalType": "uint256",
-						"name": "blockChainId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "blockCoinbase",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "blockDifficulty",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "blockGaslimit",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "blockTimestamp",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "originGasPrice",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "origin",
-						"type": "address"
-					},
-					{
-						"internalType": "bytes4",
-						"name": "signature",
-						"type": "bytes4"
-					},
-					{
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -176,12 +127,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/2_AddressContract.sol": {
-			"keccak256": "0xea475ebd83bc913d064e5ffd4f712484333ef33947a78c2f429369edfbd01372",
+		"contracts/1_Owner.sol": {
+			"keccak256": "0x62b9abeabeeb823e886aea62f60b3c0121b8548f284910cada1b6f6031b693cb",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c01bd9e7f0f2d8247e6b610daf758f179b9c75eb9cb66dc6ebc11e0d6416520d",
-				"dweb:/ipfs/Qme923ryWXQFLkjZgCCeoCvQauWw8NfeP1J3PUBAEGzTFZ"
+				"bzz-raw://bde71d0a70179128aaf60254e37d9b685701336f66dceab88e0c1553a8411f2b",
+				"dweb:/ipfs/Qme8F1G5K5cHz9e9ocetDxLq9yVz5G1vkjD4m2kyqbgKWi"
+			]
+		},
+		"contracts/2_AddressContract.sol": {
+			"keccak256": "0x1e539012f4e3fd62353c744348b7df0d96b08b92b664711f7e28722bfacba4bf",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://58dc58c8ad13c0518e663b0e298c58f6cf88e718eef3677b362fcd01222d5ebe",
+				"dweb:/ipfs/Qma2hQ1H6MdNy41ayY1wAZ6KrQCu4bJPJ1VAik7Mbfwatf"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0xf2560b5386574153057104d19a9e68a32ee912cf23c0c8df1fe9a0607f42d543",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a63166e036b040826baa513772451a79925daa304b38749100efb089ac07cdc2",
+				"dweb:/ipfs/QmUtMTxUFKU6a5oFXsEJnTPvb3QPb7GDDmSv5yZ1jFHDwR"
 			]
 		}
 	},
