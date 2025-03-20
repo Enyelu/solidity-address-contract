@@ -8,6 +8,7 @@ import "./1_Owner.sol";
 contract AddressContract is Owner{
 
    ResponseModel private response;
+   event PublishDataRead(address indexed sender, string message, ResponseModel data);
 
    struct ResponseModel {
 
@@ -47,6 +48,7 @@ contract AddressContract is Owner{
         response.signature = msg.sig;
         response.sender = msg.sender;
 
+        emit PublishDataRead(msg.sender, "Transaction info has just been read", response);
         return (response);
    }
 }

@@ -28,52 +28,14 @@
 				],
 				"name": "OwnerSet",
 				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "newOwner",
-						"type": "address"
-					}
-				],
-				"name": "changeOwner",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getOwner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
 			"details": "Set & change owner",
 			"kind": "dev",
 			"methods": {
-				"changeOwner(address)": {
-					"details": "Change owner",
-					"params": {
-						"newOwner": "address of new owner"
-					}
-				},
 				"constructor": {
 					"details": "Set contract deployer as owner"
-				},
-				"getOwner()": {
-					"details": "Return owner address ",
-					"returns": {
-						"_0": "address of owner"
-					}
 				}
 			},
 			"title": "Owner",
@@ -102,11 +64,11 @@
 	},
 	"sources": {
 		"contracts/1_Owner.sol": {
-			"keccak256": "0x072df1245681a805f673875fa3dfaf38cd5e37c49625fa19aab1761a66c11fe8",
+			"keccak256": "0x62b9abeabeeb823e886aea62f60b3c0121b8548f284910cada1b6f6031b693cb",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://34809dd07b27dcf9fbf1a9eb20bc668447faae5ee58567351067c4f8b06bac94",
-				"dweb:/ipfs/QmQSMr8jWFx7xA8T1ZADVd9NfzfKQ7fthkC4yZHamTWJZR"
+				"bzz-raw://bde71d0a70179128aaf60254e37d9b685701336f66dceab88e0c1553a8411f2b",
+				"dweb:/ipfs/Qme8F1G5K5cHz9e9ocetDxLq9yVz5G1vkjD4m2kyqbgKWi"
 			]
 		},
 		"hardhat/console.sol": {
